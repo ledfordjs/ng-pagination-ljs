@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="ng-pagination-ljs">
+<head>
+	<title>ng-pagination-ljs</title>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+
+	<style media="screen">
+		header{
+			height: 75px;
+		    background-color: #f4f6f7;
+		    border-bottom: 1px solid #c5d1d5;
+		}
+
+		header h1{
+			line-height: 75px;
+		}
+
+		.paginationNav{
+			text-align: center;
+		}
+
+		.pagination-container{
+			margin: 20px 0;
+		}
+
+		.pagination-container .post{
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid #eee;
+			border-radius: 5px;
+		}
+
+		footer{
+			height: 75px;
+			text-align: center;
+		    background-color: #f4f6f7;
+		    border-top: 1px solid #c5d1d5;
+		}
+
+		footer p{
+			margin: 0;
+			line-height: 75px;
+		}
+	</style>
+
+	<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./modules/ng-pagination-ljs/ng-pagination-ljs.module.js"></script>
+	<script type="text/javascript" src="./modules/ng-pagination-ljs/controllers/main.controller.js"></script>
+
+	<!-- ng-pagination-ljs Module -->
+	<script type="text/javascript" src="./dist/ng-pagination-ljs.js"></script>
+</head>
+<body ng-controller="mainController">
+	<header>
+		<div class="container-fluid">
+			<h1>ljs-Pagination</h1>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div ljs-pagination config="paginationConfig" template-url="modules/ng-pagination-ljs/templates/pagination.tpl.html"></div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<p>Created by Joseph Ledford | Website: <a href="http://ledford.net63.net/" target="_blank">ledford.net63.net</a></p>
+		</div>
+	</footer>
+</body>
+</html>

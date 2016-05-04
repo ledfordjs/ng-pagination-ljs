@@ -1,0 +1,40 @@
+{
+  "name": "ng-pagination-ljs",
+  "version": "0.1.0",
+  "description": "This is an angular component for adding pagination to your app",
+  "keywords": [
+    "(angular",
+    "pagination)"
+  ],
+  "authors": [
+    {
+      "name": "Joseph Scott Ledford",
+      "email": "ledfordjs@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ledfordjs/ng-pagination-ljs)"
+  },
+  "license": "MIT",
+  "main": [
+    "dist/ng-pagination-ljs.js",
+    "dist/ng-pagination-ljs.css"
+  ],
+  "ignore": [
+    "*.*",
+    "bower",
+    "modules",
+    "node_modules",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular": ">=1.2.0"
+  }
+}
